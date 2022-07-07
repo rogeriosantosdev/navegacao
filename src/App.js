@@ -1,16 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, Text } from 'react-native'
-import TextoCentral from './components/TextoCentral'
-import TelaA from './views/TelaA'
-import TelaB from './views/TelaB'
-import TelaC from './views/TelaC'
+import TelaA from './view/TelaA';
+import TelaB from './view/TelaB';
+import TelaC from './view/TelaC';
 
-export default props => (
-    
-    <SafeAreaView style={{flex: 1 }}>
-        <TelaA/>
-        <TelaB/> 
-        <TelaC/> 
-    </SafeAreaView>
-    
-)
+export default props => {
+    return(
+        <SafeAreaView style={{flex:1}}>
+            <TelaA/>
+            <TelaB/>
+            <TelaC/>
+            <StatusBar style="auto" />
+        </SafeAreaView>
+    )
+}
